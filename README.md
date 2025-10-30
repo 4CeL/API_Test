@@ -53,4 +53,4 @@ Anda akan melihat respons JSON yang datanya sudah terisi lengkap, sesuai dengan 
 
 ### 🗂️ File Soal Asli
 
-Semua file soal asli yang diberikan (`.docx`, `.json`, `.txt`) dapat ditemukan di dalam folder `/soal_assessment` di repository ini.
+Semua file soal asli yang diberikan (`.docx`, `.json`, `.txt`) dapat ditemukan di dalam folder `/Soal` di repository ini.
