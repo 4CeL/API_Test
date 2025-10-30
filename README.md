@@ -26,7 +26,7 @@ Proyek ini dikonfigurasi untuk menggunakan **H2 In-Memory Database**. Perekrut t
 
 1.  **Clone Repository**
     ```bash
-    git clone [https://github.com/](https://github.com/)[NamaUserAnda]/[NamaRepoAnda].git
+    git clone [https://github.com/](https://github.com/)[4CeL/[API_Test].git
     ```
 
 2.  **Buka Proyek**
