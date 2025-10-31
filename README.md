@@ -35,37 +35,43 @@ Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint un
 * **Lombok**
 * **Maven**
 
-### Struktur Folder###
+###Struktur Project###
    ```bash
     API_Test/
 ├── src/
 │   ├── main/
 │   │   ├── java/com/example/transaction/
 │   │   │   ├── controller/
-│   │   │   │   └── TransactionController.java      # REST API Endpoints
+│   │   │   │   └── TransactionController.java     
 │   │   │   ├── service/
-│   │   │   │   └── TransactionService.java         # Business Logic
+│   │   │   │   └── TransactionService.java        
 │   │   │   ├── repository/
-│   │   │   │   ├── TransactionRepository.java      # Database Access Layer
+│   │   │   │   ├── TransactionRepository.java     
 │   │   │   │   └── StatusMasterRepository.java
 │   │   │   ├── entity/
-│   │   │   │   ├── Transaction.java                # JPA Entity (Table Model)
+│   │   │   │   ├── Transaction.java               
 │   │   │   │   └── StatusMaster.java
 │   │   │   ├── dto/
-│   │   │   │   ├── TransactionDTO.java             # Data Transfer Object
+│   │   │   │   ├── TransactionDTO.java            
 │   │   │   │   ├── StatusDTO.java
 │   │   │   │   └── ApiResponse.java
-│   │   │   └── TransactionApiApplication.java      # Main Application
+│   │   │   └── TransactionApiApplication.java      
 │   │   └── resources/
-│   │       └── application.properties              # Database Configuration
+│   │       └── application.properties             
 │   └── test/
 │       └── java/
 ├── database/
-│   └── schema.sql                                   # Database Setup Script
+│   └── data.sql                                   
 ├── .gitignore
 ├── README.md
-└── pom.xml                                          # Maven Configuration
+└── pom.xml                                          
    ```
+**Penjelasan**
+`controller/` -> Menangani HTTP requests dan responses
+`service/` -> Berisi business logic aplikasi
+`repository/` -> Interface untuk akses database
+`entity/` -> Class untuk mempresentasikan database
+`dto/` -> Object untuk transfer data
 
 ### 🚀 Cara Menjalankan Proyek
 
