@@ -60,10 +60,8 @@ Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint un
     git clone https://github.com/4CeL/API_Test.git
     ```
 
-2.  **Buka Proyek**
-    Buka proyek sebagai "Existing Maven Project" di IDE Anda (Eclipse, IntelliJ).
-
 3. **Setup Database**
+   
    Metode 1 -> Via MySQL command line
     ```bash
     mysql -u root -p < database/data.sql
@@ -75,6 +73,9 @@ Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint un
     3. pilih file database/data.sql
     4. Klik go
     ```
+   
+   2.  **Buka Proyek**
+    Buka proyek sebagai "Existing Maven Project" di IDE Anda (Eclipse, IntelliJ).
 
 5.  **Cek `data.sql` (Penting)**
     Proyek ini menyertakan file `src/main/resources/data.sql`. File ini akan **secara otomatis** dijalankan oleh Spring Boot untuk membuat skema tabel dan mengisi semua data transaksi saat aplikasi pertama kali berjalan.
