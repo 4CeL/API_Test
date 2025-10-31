@@ -9,10 +9,10 @@ Assessment ini terdiri dari dua bagian:
 ---
 ## 🧠 IT Logical Test
 
-### File Soal
+### 📁 File Soal
 Seluruh dokumen soal IT Logical Test dapat dilihat dalam folder '\soal' pada respository ini
 
-### Jawaban Soal
+### 📄 Jawaban Soal
 Jawaban dari IT Logical Test dapat dilihat dalam folder '\Logical_Answer' pada repository ini
 
 ---
