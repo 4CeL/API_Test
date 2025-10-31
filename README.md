@@ -193,6 +193,24 @@ Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint un
 
 ### 🧪 Testing API
 
+1. **Testing Via Browser**
+   
+   Buka browser dan akses
+   ```bash
+   http://localhost:8080/api/transactions
+   ```
+2. Testing Via Postman
+   ```bash
+   1. Buka Postman
+   2. Create New Request
+      - Method : GET
+      - URL : http://localhost:8080/api/transactions
+   3. Klik Send
+   4. Hasil Akhir
+      - Status : 200 OK
+      - Body : JSON berisi data transaksi
+   ```
+
 Gunakan Postman atau browser Anda untuk menguji *endpoint* berikut:
 
 * **Method:** `GET` 
