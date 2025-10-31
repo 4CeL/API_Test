@@ -86,7 +86,7 @@ Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint un
     * Maven
     * MySQL
 
-   Bisa verivikasi intalasi dengan
+   Bisa verifikasi intalasi dengan
     ```bash
    # Cek Java version
    java -version
@@ -136,10 +136,11 @@ Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint un
    # Server Configuration
    server.port=8080
     ```
-   Notes Tambahan:
+   **Notes Tambahan:**
    Silahkan sesuaikan username dan password untuk database anda
 
 5. **Build Project**
+   
    Jalankan ini
    ```bash
     # Download dependencies dan compile
@@ -147,7 +148,8 @@ Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint un
     ```
    Tunggu hingga success
 
-6. **Run Application**
+7. **Run Application**
+   
    *Cara 1* -> Via Maven
    ```bash
     mvn spring-boot:run
@@ -158,7 +160,7 @@ Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint un
     2. Cari file DemoApplication.java
     3. Klik kanan → Run As → Java Application
     ```
-7. **Cek Aplikasi**
+9. **Cek Aplikasi**
    Jika berhasil maka akan muncul tampilan seperti ini
    ```bash
        .   ____          _            __ _ _
