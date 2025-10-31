@@ -174,6 +174,7 @@ Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint un
    Started DemoApplication in 3.456 seconds
    ```
 
+
 ### 📊 Database Schema
 ```bash
   ┌─────────────────────┐         ┌──────────────────┐
@@ -211,14 +212,3 @@ Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint un
       - Body : JSON berisi data transaksi
    ```
 
-Gunakan Postman atau browser Anda untuk menguji *endpoint* berikut:
-
-* **Method:** `GET` 
-* **URL:** `http://localhost:8080/api/transactions`
-
-**Hasil yang Diharapkan:**
-Anda akan melihat respons JSON yang datanya sudah terisi lengkap, sesuai dengan file `viewData.json` yang diberikan.
-
-### 🗂️ File Soal Asli
-
-Semua file soal asli yang diberikan (`.docx`, `.json`, `.txt`) dapat ditemukan di dalam folder `/Soal` di repository ini.
