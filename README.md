@@ -18,6 +18,8 @@ Penjelasan Setiap Folder
 
    7. `pom.xml` -> File yang berisi konfigurasi yang berisi daftar dependesi yang diperlukan
 
+---
+
 Assessment ini terdiri dari dua bagian:
 1.  **IT Logical Programming Test**
 2.  **Backend API Development**
