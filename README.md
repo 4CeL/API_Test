@@ -33,7 +33,39 @@ Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint un
 * **Spring Data JPA** (v3.5.7)
 * **MySQL** (v5.5)
 * **Lombok**
-* **Maven**                                   
+* **Maven**
+
+### Struktur Folder###
+   ```bash
+    API_Test/
+├── src/
+│   ├── main/
+│   │   ├── java/com/example/transaction/
+│   │   │   ├── controller/
+│   │   │   │   └── TransactionController.java      # REST API Endpoints
+│   │   │   ├── service/
+│   │   │   │   └── TransactionService.java         # Business Logic
+│   │   │   ├── repository/
+│   │   │   │   ├── TransactionRepository.java      # Database Access Layer
+│   │   │   │   └── StatusMasterRepository.java
+│   │   │   ├── entity/
+│   │   │   │   ├── Transaction.java                # JPA Entity (Table Model)
+│   │   │   │   └── StatusMaster.java
+│   │   │   ├── dto/
+│   │   │   │   ├── TransactionDTO.java             # Data Transfer Object
+│   │   │   │   ├── StatusDTO.java
+│   │   │   │   └── ApiResponse.java
+│   │   │   └── TransactionApiApplication.java      # Main Application
+│   │   └── resources/
+│   │       └── application.properties              # Database Configuration
+│   └── test/
+│       └── java/
+├── database/
+│   └── schema.sql                                   # Database Setup Script
+├── .gitignore
+├── README.md
+└── pom.xml                                          # Maven Configuration
+   ```
 
 ### 🚀 Cara Menjalankan Proyek
 
@@ -62,11 +94,11 @@ Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint un
 
 3. **Setup Database**
    
-   Metode 1 -> Via MySQL command line
+   *Metode 1 -> Via MySQL command line*
     ```bash
     mysql -u root -p < database/data.sql
     ```
-   Metode 2 -> Via phpMyAdmin (XAMPP)
+   *Metode 2 -> Via phpMyAdmin (XAMPP)*
    ```bash
     1. Start MySQL dari XAMPP
     2. Klik tab import
@@ -75,7 +107,7 @@ Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint un
     ```
 4. **Konfigurasi Koneksi Database**
 
-   Edit file 'src/main/resources/application.properties'
+   Edit file `src/main/resources/application.properties`
     ```bash
     # Database Configuration
    spring.datasource.url=jdbc:mysql://localhost:3306/transaction_data
@@ -95,17 +127,20 @@ Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint un
     ```
    Notes Tambahan:
    Silahkan sesuaikan username dan password untuk database anda
+
+5. **Build Project**
+   Jalankan 
    
    2.  **Buka Proyek**
     Buka proyek sebagai "Existing Maven Project" di IDE Anda (Eclipse, IntelliJ).
 
-6.  **Cek `data.sql` (Penting)**
+7.  **Cek `data.sql` (Penting)**
     Proyek ini menyertakan file `src/main/resources/data.sql`. File ini akan **secara otomatis** dijalankan oleh Spring Boot untuk membuat skema tabel dan mengisi semua data transaksi saat aplikasi pertama kali berjalan.
 
-7.  **Jalankan Aplikasi**
+8.  **Jalankan Aplikasi**
     Cari file `DemoApplication.java` (atau file utama Spring Boot Anda) dan jalankan sebagai "Java Application".
 
-8.  **Aplikasi Siap**
+9.  **Aplikasi Siap**
     Aplikasi akan berjalan di `http://localhost:8080`.
 
 ### 🧪 Cara Menguji API
