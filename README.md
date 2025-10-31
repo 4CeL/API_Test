@@ -44,6 +44,7 @@ Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint un
     * MySQL
 
 Bisa verivikasi intalasi dengan
+ ```bash
 # Cek Java version
 java -version
 
@@ -52,6 +53,7 @@ mvn -version
 
 # Cek MySQL (via XAMPP atau service)
 mysql --version
+```
 
 
 
