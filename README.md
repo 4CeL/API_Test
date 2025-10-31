@@ -19,15 +19,52 @@ Jawaban dari IT Logical Test dapat dilihat dalam folder '\Logical_Answer' pada r
 
 ## 🖥️ Backend API Development
 
-Proyek API ini dibuat untuk memenuhi tugas *backend development* . API ini mengambil data dari database dan mengembalikannya dalam format JSON yang telah ditentukan .
+Proyek API ini dibuat untuk menjawab tugas *backend development* . API ini mengambil data dari database dan mengembalikannya dalam format JSON yang telah ditentukan .
 
-### 🛠️ Technology Stack
-* **Java 17+**
-* **Spring Boot** (v3.x.x)
-* **Spring Data JPA** (Hibernate)
-* **H2 Database** (In-Memory, untuk kemudahan testing)
+### 📖 Deskripsi
+Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint untuk:
+* Mengambil semua data transaksi dari database
+* Menampilkan status dari transaksi
+* Response dalam format JSON
+
+### 🛠️ Technology Use
+* **Java 22+**
+* **Spring Boot** (v3.5.7)
+* **Spring Data JPA** (v3.5.7)
+* **MySQL** (v5.5)
 * **Lombok**
 * **Maven**
+
+### ⛓️ Struktur Project
+API_Test/
+├── src/
+│   ├── main/
+│   │   ├── java/com/example/demo/
+│   │   │   ├── controller/
+│   │   │   │   └── TransactionController.java      
+│   │   │   ├── service/
+│   │   │   │   └── TransactionService.java         
+│   │   │   ├── repository/
+│   │   │   │   ├── TransactionRepository.java      
+│   │   │   │   └── StatusMasterRepository.java
+│   │   │   ├── entity/
+│   │   │   │   ├── Transaction.java                
+│   │   │   │   └── StatusMaster.java
+│   │   │   ├── dto/
+│   │   │   │   ├── TransactionDTO.java             
+│   │   │   │   ├── StatusDTO.java
+│   │   │   │   └── ApiResponse.java
+│   │   │   └── TransactionApiApplication.java      
+│   │   └── resources/
+│   │       └── application.properties              
+│   └── test/
+│       └── java/
+├── database/
+│   └── data.sql                                   
+├── .gitignore
+├── README.md
+└── pom.xml                                          
+
 
 ### 🚀 Cara Menjalankan Proyek
 
