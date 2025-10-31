@@ -27,48 +27,33 @@ Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint un
 * Menampilkan status dari transaksi
 * Response dalam format JSON
 
-### 🛠️ Technology Use
+### 🛠️ Teknologi
 * **Java 22+**
 * **Spring Boot** (v3.5.7)
 * **Spring Data JPA** (v3.5.7)
 * **MySQL** (v5.5)
 * **Lombok**
-* **Maven**
-
-### ⛓️ Struktur Project
-API_Test/
-├── src/
-│   ├── main/
-│   │   ├── java/com/example/demo/
-│   │   │   ├── controller/
-│   │   │   │   └── TransactionController.java      
-│   │   │   ├── service/
-│   │   │   │   └── TransactionService.java         
-│   │   │   ├── repository/
-│   │   │   │   ├── TransactionRepository.java      
-│   │   │   │   └── StatusMasterRepository.java
-│   │   │   ├── entity/
-│   │   │   │   ├── Transaction.java                
-│   │   │   │   └── StatusMaster.java
-│   │   │   ├── dto/
-│   │   │   │   ├── TransactionDTO.java             
-│   │   │   │   ├── StatusDTO.java
-│   │   │   │   └── ApiResponse.java
-│   │   │   └── TransactionApiApplication.java      
-│   │   └── resources/
-│   │       └── application.properties              
-│   └── test/
-│       └── java/
-├── database/
-│   └── data.sql                                   
-├── .gitignore
-├── README.md
-└── pom.xml                                          
-
+* **Maven**                                   
 
 ### 🚀 Cara Menjalankan Proyek
 
-Proyek ini dikonfigurasi untuk menggunakan **H2 In-Memory Database**. Perekrut tidak perlu menginstal atau mengkonfigurasi database eksternal.
+1. Pastikan sofware yang diperlukan sudah diinstal
+    * JDK 17 atau lebih tinggi
+    * Eclipse IDE atau InteliJ
+    * Maven
+    * MySQL
+
+Bisa verivikasi intalasi dengan
+# Cek Java version
+java -version
+
+# Cek Maven version
+mvn -version
+
+# Cek MySQL (via XAMPP atau service)
+mysql --version
+
+
 
 1.  **Clone Repository**
     ```bash
