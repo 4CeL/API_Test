@@ -1,10 +1,10 @@
 # Technical Assessment - Back End Developer Intern
 
-Repository ini berisi jawaban saya untuk *technical assessment* yang diberikan untuk posisi Back End Developer Intern.
+Repository ini berisi jawaban dari test yang diberikan untuk posisi Back End Developer Intern.
 
 Assessment ini terdiri dari dua bagian:
-1.  **IT Logical Programming Test** (Jawaban ada di dalam file `.docx` yang ada di dalam folder "Logical_Answer")
-2.  **Backend API Development** (Proyek Spring Boot)
+1.  **IT Logical Programming Test**
+2.  **Backend API Development**
 
 ---
 ## 🧠 IT Logical Test
