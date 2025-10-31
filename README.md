@@ -7,10 +7,12 @@ Assessment ini terdiri dari dua bagian:
 2.  **Backend API Development** (Proyek Spring Boot)
 
 ---
-## IT Logical Test
+## 🧠 IT Logical Test
 
+### File Soal
 Seluruh dokumen soal IT Logical Test dapat dilihat dalam folder '\soal' pada respository ini
 
+### Jawaban Soal
 Jawaban dari IT Logical Test dapat dilihat dalam folder '\Logical_Answer' pada repository ini
 
 ---
