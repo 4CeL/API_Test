@@ -35,7 +35,7 @@ Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint un
 * **Lombok**
 * **Maven**
 
-###Struktur Project###
+### Struktur Project ###
    ```bash
     API_Test/
 ├── src/
@@ -68,9 +68,13 @@ Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint un
    ```
 **Penjelasan**
 `controller/` -> Menangani HTTP requests dan responses
+
 `service/` -> Berisi business logic aplikasi
+
 `repository/` -> Interface untuk akses database
+
 `entity/` -> Class untuk mempresentasikan database
+
 `dto/` -> Object untuk transfer data
 
 ### 🚀 Cara Menjalankan Proyek
