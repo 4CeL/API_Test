@@ -174,7 +174,24 @@ Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint un
    Started DemoApplication in 3.456 seconds
    ```
 
-### 🧪 Cara Menguji API
+### 📊 Database Schema
+```bash
+  ┌─────────────────────┐         ┌──────────────────┐
+  │   transactions      │         │  status_master   │
+  ├─────────────────────┤         ├──────────────────┤
+  │ PK  id              │    ┌────│ PK  id           │
+  │     product_id      │    │    │     name         │
+  │     product_name    │    │    └──────────────────┘
+  │     amount          │    │
+  │     customer_name   │    │
+  │ FK  status          │────┘
+  │     transaction_date│
+  │     create_by       │
+  │     create_on       │
+  └─────────────────────┘
+   ```
+
+### 🧪 Testing API
 
 Gunakan Postman atau browser Anda untuk menguji *endpoint* berikut:
 
