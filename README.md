@@ -35,7 +35,7 @@ Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint un
 * **Lombok**
 * **Maven**
 
-### Struktur Project ###
+### ⛓️ Struktur Project ###
    ```bash
     API_Test/
 ├── src/
@@ -67,6 +67,7 @@ Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint un
 └── pom.xml                                          
    ```
 **Penjelasan**
+
 `controller/` -> Menangani HTTP requests dan responses
 
 `service/` -> Berisi business logic aplikasi
@@ -139,19 +140,37 @@ Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint un
    Silahkan sesuaikan username dan password untuk database anda
 
 5. **Build Project**
-   Jalankan 
-   
-   2.  **Buka Proyek**
-    Buka proyek sebagai "Existing Maven Project" di IDE Anda (Eclipse, IntelliJ).
+   Jalankan ini
+   ```bash
+    # Download dependencies dan compile
+      mvn clean install
+    ```
+   Tunggu hingga success
 
-7.  **Cek `data.sql` (Penting)**
-    Proyek ini menyertakan file `src/main/resources/data.sql`. File ini akan **secara otomatis** dijalankan oleh Spring Boot untuk membuat skema tabel dan mengisi semua data transaksi saat aplikasi pertama kali berjalan.
-
-8.  **Jalankan Aplikasi**
-    Cari file `DemoApplication.java` (atau file utama Spring Boot Anda) dan jalankan sebagai "Java Application".
-
-9.  **Aplikasi Siap**
-    Aplikasi akan berjalan di `http://localhost:8080`.
+6. **Run Application**
+   *Cara 1* -> Via Maven
+   ```bash
+    mvn spring-boot:run
+    ```
+   *Cara 2* -> Via IDE
+   ```bash
+    1. Buka project di IDE
+    2. Cari file DemoApplication.java
+    3. Klik kanan → Run As → Java Application
+    ```
+7. **Cek Aplikasi**
+   Jika berhasil maka akan muncul tampilan seperti ini
+   ```bash
+       .   ____          _            __ _ _
+    /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+   ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+    \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+     '  |____| .__|_| |_|_| |_\__, | / / / /
+    =========|_|==============|___/=/_/_/_/
+    :: Spring Boot ::                (v3.x.x)
+   ...
+   Started DemoApplication in 3.456 seconds
+   ```
 
 ### 🧪 Cara Menguji API
 
