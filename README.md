@@ -73,17 +73,39 @@ Aplikasi ini merupakan sebuah REST API berbasi JAVA yang menyediakan endpoint un
     3. pilih file database/data.sql
     4. Klik go
     ```
+4. **Konfigurasi Koneksi Database**
+
+   Edit file 'src/main/resources/application.properties'
+    ```bash
+    # Database Configuration
+   spring.datasource.url=jdbc:mysql://localhost:3306/transaction_data
+   spring.datasource.username=root
+   spring.datasource.password=
+
+   spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+   # JPA Configuration
+   spring.jpa.hibernate.ddl-auto=update
+   spring.jpa.show-sql=true
+   spring.jpa.properties.hibernate.format_sql=true
+   spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+
+   # Server Configuration
+   server.port=8080
+    ```
+   Notes Tambahan:
+   Silahkan sesuaikan username dan password untuk database anda
    
    2.  **Buka Proyek**
     Buka proyek sebagai "Existing Maven Project" di IDE Anda (Eclipse, IntelliJ).
 
-5.  **Cek `data.sql` (Penting)**
+6.  **Cek `data.sql` (Penting)**
     Proyek ini menyertakan file `src/main/resources/data.sql`. File ini akan **secara otomatis** dijalankan oleh Spring Boot untuk membuat skema tabel dan mengisi semua data transaksi saat aplikasi pertama kali berjalan.
 
-6.  **Jalankan Aplikasi**
+7.  **Jalankan Aplikasi**
     Cari file `DemoApplication.java` (atau file utama Spring Boot Anda) dan jalankan sebagai "Java Application".
 
-7.  **Aplikasi Siap**
+8.  **Aplikasi Siap**
     Aplikasi akan berjalan di `http://localhost:8080`.
 
 ### 🧪 Cara Menguji API
