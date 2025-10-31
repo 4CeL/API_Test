@@ -2,6 +2,19 @@
 
 Repository ini berisi jawaban dari test yang diberikan untuk posisi Back End Developer Intern.
 
+Penjelasan Setiap Folder
+`/Soal` -> Berisi file-file soal untuk test ini
+
+`/Logical_Answer` -> Berisi jawaban untuk Logical Test
+
+`/src` -> Merupakan source code untuk Back End API Application
+
+`/database` -> Berisi database yang diperlukan untuk Back End API Application
+
+`.gitignore`
+
+`ReadME` -> Berisi penjelasan project ini
+
 Assessment ini terdiri dari dua bagian:
 1.  **IT Logical Programming Test**
 2.  **Backend API Development**
